@@ -1,4 +1,3 @@
-import './App.css';
 import Form from './components/Form'
 import Map from './components/Map'
 import {useState} from 'react'
