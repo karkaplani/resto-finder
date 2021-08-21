@@ -1,5 +1,5 @@
 import {useForm} from 'react-hook-form'
-import Tooltip from './Tooltip/Tooltip'
+import './input.css'
 
 /**
  * Form component to pass the data to get results from the API.
@@ -14,16 +14,26 @@ const Form = ({getData}) => {
     return (
         <> 
         <form className='form' onSubmit={handleSubmit((data) => {getData(data)})}>
-          <input type="text" name='name' placeholder='Keywords' {...register('name', {required: true})}/> <br /> 
-          {errors.name && <Tooltip/>}
 
-          <input type="text" name='postal-code' placeholder='Postal Code' {...register('zipCode', {required: true})}/> <br />
-          {errors.zipCode && <Tooltip/>}
+          <span class="input">
+            <input type="text" name='name' placeholder='Keywords' {...register('name', {required: true})}/> 
+            {errors.name && console.log('anan')}
+              <span></span>	
+          </span>
 
-          <input type="number" name='radius' placeholder='Radius' {...register('radius', {required: false})}/> <br />
-          {errors.radius && <Tooltip/>}
+          <span class="input">
+            <input type="text" name='postal-code' placeholder="Postal Code" {...register('zipCode', {required: true})}/>
+            <span></span>	
+          </span>
 
+          <span class="input">
+            <input type="number" name='radius' placeholder="Radius" {...register('radsius', {required: false})}/>
+            <span></span>	
+          </span>
+
+          <div className='wrap'>
           <input className='button' type="submit" name='submit' value='Feed me!'/>
+          </div>
 
         </form>
         </>

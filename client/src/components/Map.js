@@ -48,8 +48,8 @@ const Map = ({centreX, centreY, markersToDisplay}) => {
           <h2></h2>
             <MapContainer
               whenCreated={setmap}
-              center = {[0, 0]} //Default centre, can be changed
-              zoom={13}
+              center = {[0,0]} //Default centre, can be changed
+              zoom={1}
               className="static-map"
               {...interactionOptions}
             >

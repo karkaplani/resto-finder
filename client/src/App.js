@@ -48,7 +48,6 @@ const App = () => {
   return (
     <div className="App">
       <h1>Restaurant Finder</h1>
-      <h2 className = 'error'></h2>
       <Form getData={getData}/>
       <br /> <br /> <br />
       <Map
