@@ -12,7 +12,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-image: url('./background.png');
+  background-image: url('./img/background.png');
   color: aliceblue;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 /*Media query for phones*/
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   h1 {
     font-size: 35px;
     padding-bottom: 10px;
@@ -80,9 +80,9 @@ body {
   }
 
   body {
-    background-image: url('https://wallpaper.dog/large/20398906.jpg');
+    background-image: url('./img/background-2.jpg');
   }
-} */
+}
 
 
 

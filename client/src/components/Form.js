@@ -22,7 +22,7 @@ const Form = ({getData}) => {
           </span>
 
           <span class="input">
-            <input type="text" name='postal-code' placeholder="Postal Code" {...register('zipCode', {required: true})}/>
+            <input type="text" name='postal-code' placeholder="Postal Code" {...register('zipCode', {required: false})}/>
             <span></span>	
           </span>
 
