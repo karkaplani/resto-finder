@@ -1,0 +1,5 @@
+*-env/*
+*.pwd
+.idea
+__pycache__/
+.DS_Store
