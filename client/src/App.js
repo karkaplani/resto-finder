@@ -47,7 +47,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Restaurant Finder</h1>
+      <h1>Resto Finder</h1>
       <Form getData={getData}/>
       <br /> <br /> <br />
       <Map
